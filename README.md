@@ -1,5 +1,7 @@
 # Sunrise Cafe & Bakery
 
+[View the live website](https://sunrisecafe1.netlify.app/)
+
 ## What was built
 A responsive one-page website for Sunrise Cafe & Bakery featuring its bakery-forward menu, cafe information, photos, customer reviews, and two independently connected signup forms.
 
