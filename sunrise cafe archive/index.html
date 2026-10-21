@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- shows the sunrise mark in the browser tab -->
+  <link rel="icon" type="image/svg+xml" href="images/sunrise-cafe-favicon.svg" />
+  <!-- keeps the business name visible in the browser title -->
+  <title>Sunrise Cafe &amp; Bakery | Brunch &amp; Fresh Pastries | Austin, TX</title>
+  <meta name="description" content="Sunrise Cafe &amp; Bakery — Austin's favorite brunch spot on South Lamar. Fresh-baked pastries, locally sourced brunch, craft coffee &amp; more. Open daily." />
+  <!-- loads the cafe's redesigned styles -->
+  <link rel="stylesheet" href="sunrise-cafe-starter-files/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-icon">&#9728;&#65039;</span>
+        <!-- names the business in the header -->
+        <span class="logo-text">SUNRISE<span class="logo-accent">CAFE</span><span class="logo-bakery">&amp; BAKERY</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#hours-location">Visit</a></li>
+      </ul>
+      <!-- todo: replace with the real square ordering url when ready -->
+      <a href="https://squareup.com/PLACEHOLDER" class="nav-cta" target="_blank" rel="noopener noreferrer">Order Online</a>
+      <!-- toggles the mobile navigation -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-subtitle animate-on-scroll">Austin&rsquo;s Favorite Morning Spot</p>
+      <h1 class="hero-title animate-on-scroll">
+        Fresh Baked,<br />
+        <span class="text-gradient">Locally Sourced</span>
+      </h1>
+      <p class="hero-desc animate-on-scroll">
+        From-scratch pastries, locally sourced brunch, and craft coffee &mdash;
+        served with warmth on South Lamar since day one.
+      </p>
+      <div class="hero-actions animate-on-scroll">
+        <a href="#menu" class="btn btn-primary">View Our Menu</a>
+        <a href="#hours-location" class="btn btn-outline">Plan Your Visit</a>
+        <!-- todo: replace with the real square ordering url when ready -->
+        <a href="https://squareup.com/PLACEHOLDER" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Order Online</a>
+      </div>
+      <div class="hero-badges animate-on-scroll">
+        <div class="badge">
+          <span class="badge-icon">&#11088;</span>
+          <div>
+            <strong>4.8</strong>
+            <span>Rating</span>
+          </div>
+        </div>
+        <div class="badge">
+          <span class="badge-icon">&#128149;</span>
+          <div>
+            <strong>200+</strong>
+            <span>Reviews</span>
+          </div>
+        </div>
+        <div class="badge">
+          <span class="badge-icon">&#127793;</span>
+          <div>
+            <strong>Local</strong>
+            <span>Sourced</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- shows the cafe exterior in the hero -->
+    <div class="hero-image-placeholder animate-on-scroll">
+      <img class="hero-image" src="images/cafe-exterior.jpg" alt="Sunrise Cafe &amp; Bakery exterior on S Lamar Blvd" />
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-col animate-on-scroll">
+          <div class="about-image-wrapper">
+            <!-- shows the cafe interior -->
+            <img class="about-image" src="images/cafe-interior-warm.jpg" alt="Inside Sunrise Cafe &amp; Bakery" loading="lazy" />
+            <div class="about-accent-box">
+              <span class="accent-number">Est.</span>
+              <span class="accent-label">Austin, TX</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text-col">
+          <span class="section-tag animate-on-scroll">Our Story</span>
+          <h2 class="section-title animate-on-scroll">Where Every Morning<br />Feels Like a Good One</h2>
+          <p class="about-paragraph animate-on-scroll">
+            Sunrise Cafe &amp; Bakery was born from a love for slow mornings, buttery
+            pastries, and the belief that great food brings people together. We set up
+            shop on South Lamar to give Austin a neighborhood brunch spot that feels
+            like home.
+          </p>
+          <p class="about-paragraph animate-on-scroll">
+            Every morning, our bakers arrive before dawn to craft croissants, cinnamon
+            rolls, and banana bread from scratch. Our kitchen sources eggs, produce,
+            and dairy from local Texas farms &mdash; because fresh ingredients make all
+            the difference.
+          </p>
+          <div class="about-features animate-on-scroll">
+            <div class="about-feature">
+              <div class="feature-icon">&#127793;</div>
+              <div>
+                <strong>Locally Sourced</strong>
+                <p>Texas farms &amp; purveyors</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="feature-icon">&#129377;</div>
+              <div>
+                <strong>Baked Fresh Daily</strong>
+                <p>From-scratch pastries every morning</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="feature-icon">&#9749;</div>
+              <div>
+                <strong>Craft Coffee</strong>
+                <p>Small-batch roasted beans</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MENU ===================== -->
+  <section class="menu section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag animate-on-scroll">The Menu</span>
+        <h2 class="section-title animate-on-scroll">Start Your Day Right</h2>
+        <p class="section-desc animate-on-scroll">Everything is made fresh in-house with locally sourced ingredients. Served with love, every single morning.</p>
+      </div>
+
+      <!-- Menu Filter Tabs -->
+      <div class="menu-tabs animate-on-scroll">
+        <button class="menu-tab filter-btn active" data-category="all">All</button>
+        <button class="menu-tab filter-btn" data-category="brunch">Brunch</button>
+        <button class="menu-tab filter-btn" data-category="bakery">Bakery</button>
+        <button class="menu-tab filter-btn" data-category="drinks">Drinks</button>
+      </div>
+
+      <!-- groups the menu with bakery featured first -->
+      <div class="menu-grid" id="menuGrid">
+        <!-- features the bakery selection first -->
+        <section class="menu-category-group menu-category-bakery" data-category-group="bakery" aria-labelledby="bakery-heading">
+          <h3 class="menu-category-heading" id="bakery-heading">Bakery</h3>
+          <div class="menu-category-items">
+            <article class="menu-card menu-item" data-category="bakery">
+              <img class="menu-image-placeholder" src="images/croissants.jpg" alt="Fresh Croissant" loading="lazy" style="object-fit: cover;" />
+              <div class="menu-item-copy"><div class="menu-item-heading"><h4>Fresh Croissant</h4><span class="menu-price">$4.50</span></div><p>Flaky, golden pastry baked fresh each morning.</p></div>
+            </article>
+            <article class="menu-card menu-item" data-category="bakery">
+              <img class="menu-image-placeholder" src="images/cinnamon-rolls.jpg" alt="Cinnamon Roll" loading="lazy" style="object-fit: cover;" />
+              <div class="menu-item-copy"><div class="menu-item-heading"><h4>Cinnamon Roll</h4><span class="menu-price">$5.99</span></div><p>Warm, soft rolls with cinnamon sugar and cream cheese icing.</p></div>
+            </article>
+            <article class="menu-card menu-item" data-category="bakery">
+              <img class="menu-image-placeholder" src="images/banana-bread.jpg" alt="Banana Bread Slice" loading="lazy" style="object-fit: cover;" />
+              <div class="menu-item-copy"><div class="menu-item-heading"><h4>Banana Bread Slice</h4><span class="menu-price">$4.99</span></div><p>Moist banana bread with walnuts and a touch of cinnamon.</p></div>
+            </article>
+          </div>
+        </section>
+
+        <!-- groups the brunch plates -->
+        <section class="menu-category-group" data-category-group="brunch" aria-labelledby="brunch-heading">
+          <h3 class="menu-category-heading" id="brunch-heading">Brunch</h3>
+          <div class="menu-category-items">
+            <article class="menu-card menu-item" data-category="brunch">
+              <img class="menu-image-placeholder" src="images/avocado-toast.jpg" alt="Avocado Toast" loading="lazy" style="object-fit: cover;" />
+              <div class="menu-item-copy"><div class="menu-item-heading"><h4>Avocado Toast</h4><span class="menu-price">$12.99</span></div><p>Smashed avocado, fresh herbs, and a poached egg on sourdough.</p></div>
+            </article>
+            <article class="menu-card menu-item" data-category="brunch">
+              <img class="menu-image-placeholder" src="images/breakfast-tacos.jpg" alt="Sunrise Breakfast Tacos" loading="lazy" style="object-fit: cover;" />
+              <div class="menu-item-copy"><div class="menu-item-heading"><h4>Sunrise Breakfast Tacos</h4><span class="menu-price">$9.99</span></div><p>Flour tortillas filled with eggs, cheddar, bacon, and salsa verde.</p></div>
+            </article>
+            <article class="menu-card menu-item" data-category="brunch">
+              <img class="menu-image-placeholder" src="images/blueberry-pancakes.jpg" alt="Blueberry Pancake Stack" loading="lazy" style="object-fit: cover;" />
+              <div class="menu-item-copy"><div class="menu-item-heading"><h4>Blueberry Pancake Stack</h4><span class="menu-price">$11.99</span></div><p>Fluffy buttermilk pancakes with blueberries and warm maple syrup.</p></div>
+            </article>
+            <article class="menu-card menu-item" data-category="brunch">
+              <img class="menu-image-placeholder" src="images/eggs-benedict.jpg" alt="Classic Eggs Benedict" loading="lazy" style="object-fit: cover;" />
+              <div class="menu-item-copy"><div class="menu-item-heading"><h4>Classic Eggs Benedict</h4><span class="menu-price">$14.99</span></div><p>Poached eggs and Canadian bacon with house hollandaise.</p></div>
+            </article>
+            <article class="menu-card menu-item" data-category="brunch">
+              <img class="menu-image-placeholder" src="images/overnight-oats.jpg" alt="Overnight Oats Bowl" loading="lazy" style="object-fit: cover;" />
+              <div class="menu-item-copy"><div class="menu-item-heading"><h4>Overnight Oats Bowl</h4><span class="menu-price">$8.99</span></div><p>Creamy oats with chia, seasonal fruit, honey, and toasted granola.</p></div>
+            </article>
+            <article class="menu-card menu-item" data-category="brunch">
+              <img class="menu-image-placeholder" src="images/chicken-and-waffles.jpg" alt="Chicken &amp; Waffles" loading="lazy" style="object-fit: cover;" />
+              <div class="menu-item-copy"><div class="menu-item-heading"><h4>Chicken &amp; Waffles</h4><span class="menu-price">$15.99</span></div><p>Crispy fried chicken and a Belgian waffle with hot honey.</p></div>
+            </article>
+          </div>
+        </section>
+
+        <!-- groups the cafe drinks -->
+        <section class="menu-category-group" data-category-group="drinks" aria-labelledby="drinks-heading">
+          <h3 class="menu-category-heading" id="drinks-heading">Drinks</h3>
+          <div class="menu-category-items">
+            <article class="menu-card menu-item" data-category="drinks">
+              <!-- shows the cafe latte art -->
+              <img class="menu-image-placeholder" src="images/latte-art.jpg" alt="Latte" loading="lazy" style="object-fit: cover;" />
+              <div class="menu-item-copy"><div class="menu-item-heading"><h4>Latte</h4><span class="menu-price">$5.50</span></div><p>Double espresso with silky steamed milk, made your way.</p></div>
+            </article>
+            <article class="menu-card menu-item" data-category="drinks">
+              <img class="menu-image-placeholder" src="images/cold-brew.jpg" alt="Cold Brew" loading="lazy" style="object-fit: cover;" />
+              <div class="menu-item-copy"><div class="menu-item-heading"><h4>Cold Brew</h4><span class="menu-price">$4.99</span></div><p>Slow-steeped coffee poured over ice, smooth and bold.</p></div>
+            </article>
+            <article class="menu-card menu-item" data-category="drinks">
+              <img class="menu-image-placeholder" src="images/orange-juice.jpg" alt="Fresh Squeezed OJ" loading="lazy" style="object-fit: cover;" />
+              <div class="menu-item-copy"><div class="menu-item-heading"><h4>Fresh Squeezed OJ</h4><span class="menu-price">$5.99</span></div><p>Fresh orange juice squeezed to order, with no added sugar.</p></div>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <div class="menu-note animate-on-scroll">
+        <p>&#9888;&#65039; Prices may vary. Order online via <strong>Square Online</strong> for pickup or delivery.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag animate-on-scroll">The Vibe</span>
+        <h2 class="section-title animate-on-scroll">Morning Vibes &amp; Fresh Bakes</h2>
+        <p class="section-desc animate-on-scroll">Follow us <strong>@sunrisecafeatx</strong> on Instagram for daily specials, behind-the-scenes baking &amp; more.</p>
+      </div>
+      <div class="gallery-grid animate-on-scroll">
+        <!-- shows the bakery display -->
+        <div class="gallery-item gallery-large">
+          <img class="gallery-image" src="images/bakery-display.jpg" alt="Fresh pastries in the bakery display" loading="lazy" />
+        </div>
+        <!-- shows the cafe patio -->
+        <div class="gallery-item">
+          <img class="gallery-image" src="images/cafe-patio.jpg" alt="Cafe patio seating" loading="lazy" />
+        </div>
+        <!-- shows fresh produce -->
+        <div class="gallery-item">
+          <img class="gallery-image" src="images/fresh-produce-market.jpg" alt="Fresh produce at the market" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag animate-on-scroll">Reviews</span>
+        <h2 class="section-title animate-on-scroll">What Austin Says</h2>
+      </div>
+      <div class="testimonial-slider" id="testimonialSlider">
+        <div class="testimonial-track" id="testimonialTrack">
+          <div class="testimonial-card">
+            <div class="stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+            <p>&ldquo;The croissants here are on another level &mdash; buttery, flaky, and perfectly golden. I come here every Saturday morning and it never disappoints. Best bakery in Austin!&rdquo;</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">M</div>
+              <div>
+                <strong>Maria G.</strong>
+                <span>via Google</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+            <p>&ldquo;The Sunrise Breakfast Tacos are the real deal. Perfectly seasoned eggs, crispy bacon, and that house salsa verde is addictive. This is my go-to brunch spot now.&rdquo;</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">J</div>
+              <div>
+                <strong>James T.</strong>
+                <span>via Yelp</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+            <p>&ldquo;Finally a cafe that gets oat milk lattes right! The coffee is smooth, the overnight oats bowl is gorgeous, and the whole space just feels warm and inviting.&rdquo;</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">P</div>
+              <div>
+                <strong>Priya K.</strong>
+                <span>via Google</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">&#11088;&#11088;&#11088;&#11088;</div>
+            <p>&ldquo;Great vibes and really solid food. The chicken and waffles blew me away. Only wish they were open a bit later on weekdays. Definitely worth the visit!&rdquo;</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">D</div>
+              <div>
+                <strong>David R.</strong>
+                <span>via Yelp</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-controls">
+          <button class="testimonial-btn" id="prevBtn" aria-label="Previous review">&#8592;</button>
+          <div class="testimonial-dots" id="testimonialDots"></div>
+          <button class="testimonial-btn" id="nextBtn" aria-label="Next review">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HOURS & LOCATION ===================== -->
+  <section class="find-us section" id="hours-location">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag animate-on-scroll">Visit Us</span>
+        <h2 class="section-title animate-on-scroll">Come Hungry, Leave Happy</h2>
+      </div>
+      <div class="find-us-grid">
+        <div class="find-us-info animate-on-scroll">
+          <!-- lists the business address -->
+          <div class="info-card">
+            <div class="info-icon">&#128205;</div>
+            <div>
+              <h3>Location</h3>
+              <p>2847 S Lamar Blvd<br />Austin, TX 78704<br /><em>South Lamar Neighborhood</em></p>
+            </div>
+          </div>
+          <!-- presents weekly hours in a compact mobile-friendly list -->
+          <div class="info-card hours-card">
+            <div class="info-icon">&#128337;</div>
+            <div>
+              <h3>Hours</h3>
+              <ul class="hours-list">
+                <li><span>Monday to Thursday</span><time>7am to 3pm</time></li>
+                <li><span>Friday</span><time>7am to 4pm</time></li>
+                <li><span>Saturday</span><time>8am to 4pm</time></li>
+                <li><span>Sunday</span><time>8am to 2pm</time></li>
+              </ul>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">&#128222;</div>
+            <div>
+              <h3>Contact</h3>
+              <p>
+                <a href="tel:5125550147">(512) 555-0147</a><br />
+                <a href="https://instagram.com/sunrisecafeatx" target="_blank" rel="noopener noreferrer">@sunrisecafeatx</a>
+              </p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">&#128230;</div>
+            <div>
+              <h3>Order Online</h3>
+              <p>Pickup &amp; delivery available via Square Online</p>
+            </div>
+          </div>
+        </div>
+        <div class="find-us-map animate-on-scroll">
+          <div class="map-container">
+            <!-- todo: replace this url with the real google maps embed src -->
+            <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=TODO_REPLACE_WITH_GOOGLE_MAPS_EMBED" title="Map to Sunrise Cafe &amp; Bakery at 2847 S Lamar Blvd, Austin, TX 78704" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- provides six spots for future instagram photos -->
+  <section class="instagram section" id="instagram">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Instagram</span>
+        <h2 class="section-title">A Little More Sunrise</h2>
+        <p class="section-desc">Fresh bakes, brunch plates, and mornings on South Lamar.</p>
+      </div>
+      <div class="instagram-grid">
+        <img class="instagram-image" src="Sunrise-Cafe/images/instagram-1.jpg" alt="Sunrise Cafe Instagram photo 1" loading="lazy" />
+        <img class="instagram-image" src="Sunrise-Cafe/images/instagram-2.jpg" alt="Sunrise Cafe Instagram photo 2" loading="lazy" />
+        <img class="instagram-image" src="Sunrise-Cafe/images/instagram-3.jpg" alt="Sunrise Cafe Instagram photo 3" loading="lazy" />
+        <img class="instagram-image" src="Sunrise-Cafe/images/instagram-4.jpg" alt="Sunrise Cafe Instagram photo 4" loading="lazy" />
+        <img class="instagram-image" src="Sunrise-Cafe/images/instagram-5.jpg" alt="Sunrise Cafe Instagram photo 5" loading="lazy" />
+        <img class="instagram-image" src="Sunrise-Cafe/images/instagram-6.jpg" alt="Sunrise Cafe Instagram photo 6" loading="lazy" />
+      </div>
+      <!-- opens the cafe instagram profile -->
+      <a class="btn btn-primary instagram-follow" href="https://instagram.com/sunrisecafeatx" target="_blank" rel="noopener noreferrer">Follow us @sunrisecafeatx</a>
+    </div>
+  </section>
+
+  <!-- collects customer messages through netlify forms -->
+  <section class="contact section" id="contact-form">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-desc">Questions about brunch, catering, or bakery pre-orders? Send us a note.</p>
+      </div>
+      <!-- sends contact requests to netlify and hides the spam honeypot -->
+      <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact" />
+        <div class="contact-honeypot" aria-hidden="true">
+          <label>Leave this field empty: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+        </div>
+        <div class="contact-field">
+          <label for="contact-name">Name</label>
+          <input id="contact-name" name="name" type="text" autocomplete="name" required />
+        </div>
+        <div class="contact-field">
+          <label for="contact-email">Email</label>
+          <input id="contact-email" name="email" type="email" autocomplete="email" required />
+        </div>
+        <div class="contact-field">
+          <label for="contact-phone">Phone <span>(optional)</span></label>
+          <input id="contact-phone" name="phone" type="tel" autocomplete="tel" />
+        </div>
+        <div class="contact-field contact-field-message">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <span class="logo-icon">&#9728;&#65039;</span>
+            <!-- repeats the business name in the footer -->
+            <span class="logo-text">SUNRISE<span class="logo-accent">CAFE</span><span class="logo-bakery">&amp; BAKERY</span></span>
+          </div>
+          <p>Fresh-baked pastries, locally sourced brunch, and craft coffee on South Lamar. Austin&rsquo;s favorite morning spot.</p>
+          <div class="footer-social">
+            <!-- links to the cafe's instagram profile -->
+            <a href="https://instagram.com/sunrisecafeatx" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+            </a>
+            <!-- todo: paste the real yelp page url -->
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Yelp" class="social-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            </a>
+            <!-- todo: paste the real facebook page url -->
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="tel:5125550147" aria-label="Phone" class="social-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#hours-location">Visit Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 style="margin-top: 1.5rem;">Contact</h4>
+          <ul>
+            <li><a href="tel:5125550147">(512) 555-0147</a></li>
+            <li>2847 S Lamar Blvd, Austin</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sunrise Cafe &amp; Bakery Austin. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="sunrise-cafe-starter-files/script.js"></script>
+</body>
+</html>
+
+
+
+
+

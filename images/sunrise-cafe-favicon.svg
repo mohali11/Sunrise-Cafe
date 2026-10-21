@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Sunrise Cafe &amp; Bakery</title>
+  <rect width="64" height="64" rx="14" fill="#35251d"/>
+  <path d="M13 42a19 19 0 0 1 38 0" fill="#c86632"/>
+  <path d="M10 43h44v5H10z" fill="#fff9f0"/>
+  <path d="M17 53h30" fill="none" stroke="#fff9f0" stroke-linecap="round" stroke-width="3"/>
+</svg>
